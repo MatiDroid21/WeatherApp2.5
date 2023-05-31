@@ -1,0 +1,62 @@
+/* @import url('https://fonts.googleapis.com/css?family=Rajdhani'); */
+
+body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url("https://wallpapercave.com/dwp2x/wp8963193.jpg");
+}
+
+
+h1, h2, h3{
+    color: white;
+}
+
+p{
+    color: rgb(255, 249, 249);
+}
+
+.icons{
+    width: 50px;
+    height: 40px;
+}
+
+
+#temperatura-valor{
+    color: aliceblue;
+}
+
+#temperatura-descripcion{
+    color: aliceblue;
+}
+
+#ubicacion{
+    color: aliceblue;
+}
+
+#viento-velocidad{
+    color: aliceblue;
+}
+
+#velocidad{
+    color: aliceblue;
+}
+ 
+#footer{
+    margin-top: auto;
+    backdrop-filter: blur(5px);
+}
+
+.espacio{
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+.centerForm{
+    margin-left: 40%;
+}
+
+.centerForm{
+    margin-right: 50%;
+}
