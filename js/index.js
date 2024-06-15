@@ -4,6 +4,8 @@ window.addEventListener('load', () => {
   let ubicacion = document.getElementById('ubicacion');
   let iconoAnimado = document.getElementById('icono-animado');
   let vientoVelocidad = document.getElementById('viento-velocidad');
+  let tempMin = document.getElementById('tempMin');
+  let tempMax = document.getElementById('tempMax');
   
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(posicion => {
@@ -34,8 +36,14 @@ window.addEventListener('load', () => {
         temperaturaDescripcion.textContent = desc.toUpperCase();
         ubicacion.textContent = data.name;
         vientoVelocidad.textContent = `${data.wind.speed} m/s`;
+        let maxima = data.main.temp_max;
+        console.log(maxima);
+        tempMax.innerText = `${maxima} °C`;
+        let minima = data.main.temp_min;
+        tempMin.innerText = `${minima} °C`;
 
         console.log(data.weather[0].icon);
+        
 
         /*Clima*/
         switch (data.weather[0].main) {

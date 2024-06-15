@@ -7,6 +7,8 @@ $(document).ready(function() {
     let velocidad = $('#velocidad');
     let alertContainer = $('#alert-container');
     let paisImg = $('#paisImg');
+    let tempMin = $('#tempMin');
+    let tempMax = $('#tempMax');
     
     // Ocultar elementos iniciales con animación de desvanecimiento
     temperaturaValor.fadeOut();
@@ -14,6 +16,8 @@ $(document).ready(function() {
     ubicacion.fadeOut();
     iconoAnimado.fadeOut();
     vientoVelocidad.fadeOut();
+    tempMin.fadeOut();
+    tempMax.fadeOut();
     velocidad.fadeOut();
     paisImg.fadeOut();
     
@@ -25,6 +29,8 @@ $(document).ready(function() {
       temperaturaDescripcion.fadeOut();
       ubicacion.fadeOut();
       iconoAnimado.fadeOut();
+      tempMin.fadeOut();
+      tempMax.fadeOut();
       vientoVelocidad.fadeOut();
       velocidad.fadeOut();
       paisImg.fadeOut();
@@ -45,6 +51,8 @@ $(document).ready(function() {
       temperaturaDescripcion.fadeIn();
       ubicacion.fadeIn();
       iconoAnimado.fadeIn();
+      tempMin.fadeIn();
+      tempMax.fadeIn();
       vientoVelocidad.fadeIn();
       velocidad.fadeIn();
       paisImg.fadeIn();
